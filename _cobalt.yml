@@ -1,0 +1,7 @@
+
+site:
+  title: Mort Thoughts
+  description: Thoughts from mort's mind
+  base_url: https://streat.io
+# posts:
+#   rss: rss.xml
