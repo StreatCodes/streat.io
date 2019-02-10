@@ -133,6 +133,19 @@ footer {
 	text-align: center;
 }
 
+div.four-oh-four > p:last-child, article > p:last-child {
+	margin-bottom: 0;
+}
+
+div.four-oh-four {
+	background-color: white;
+	padding: 20px;
+	margin: 100px auto 20px;
+	border-radius: 2px;
+	box-shadow: #808080 0px 0px 4px -1px;
+	width: 400px;
+}
+
 /* NAVIGATION */
 nav {
 	display: flex;
