@@ -10,30 +10,21 @@
 	<script src="/js/streats.js" async></script>
 </head>
 <body>
-	<header>
-		<div class="head-wrap">
-			<div>
-				<a href="/"><h1>Mort Thoughts</h1></a>
-			</div>
-			<nav>
-				<a href="/blog">Blog</a>
-				<a href="/projects">Projects</a>
-				<a href="/contact">Contact</a>
-			</nav>
-		</div>
-	</header>
+	{% include "header.liquid" %}
 
 	<main>
-		<article>
-			<h3>About me</h3>
+		<article class="featured">
+			{{page.content}}
 		</article>
 
 		<article>
 			{% for post in collections.posts.pages %}
-				<p>{{post.title}}</p>
-				<p>{{post.content}}</p>
+				{{post.title}}
+				{{post.content}}
 			{% endfor %}
 		</article>
 	</main>
+
+	{% include "footer.liquid" %}
 </body>
 </html>
